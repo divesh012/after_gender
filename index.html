@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First Page of my_webpage</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- Section 1: Background Video -->
+  <section class="hero">
+    <video class="video-bg" autoplay muted loop>
+      <source src="https://player.vimeo.com/external/347957463.sd.mp4?s=9dfd8e5a4ec47e4000d1bcda819cba6fd94c1bc5&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay">
+      <h1><strong>Gloora</strong></h1>
+      <h2>India’s #1<br>beauty_concept app</h2>
+      <p>Experience fast & easy online ordering<br>on the Gloora app</p>
+      <div class="buttons">
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play"></a>
+        <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on App Store"></a>
+      </div>
+      <div class="scroll-down">Scroll down ↓</div>
+    </div>
+  </section>
+
+  <style>
+     form {
+      font-family: Arial, sans-serif;
+      max-width: 300px;
+      margin: 40px auto;
+      padding: 20px;
+     color: white;
+      border-radius:10px;
+      background: hsl(272,78%, 47%);
+    }
+    form:hover{
+    box-shadow: 0 8px 20px rgba(216, 8, 8, 0.285);
+
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      font-size: 16px;
+
+    }
+
+     input[type="radio"] {
+      appearance: none;
+      width:18px;
+      height:18px;
+      border: 2px solid black;
+      border-radius: 50%;
+      margin-right: 10px;
+      position: relative;
+      cursor: pointer;
+    }
+
+       input[type="radio"]:checked::before {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 3px;
+      left: 3px;
+      background:white;
+      border-radius: 50%;
+    }
+
+
+
+    button {
+    align-items: center;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background: hsl(260, 5%, 11%);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+ 
+
+  </style>
+</head>
+<body>
+  <!-- important part of my website-->
+  <h2 style="text-align:center; color:white;">Select Your Gender</h2>
+
+<form id="genderForm">
+  <label>
+    <input type="radio" name="gender" value="male" required> Male
+  </label>
+  <label>
+    <input type="radio" name="gender" value="female" required> Female
+  </label>
+  <label>
+    <input type="radio" name="gender" value="other" required> Other
+  </label>
+  <br><br>
+<button type="submit">Submit</button>
+</form>
+
+<script>
+  document.getElementById("genderForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent default form submit
+
+    const gender = document.querySelector('input[name="gender"]:checked').value;
+    console.log("Selected gender:", gender);
+
+    if (gender === "male") {
+      window.location.href = "https://divesh012.github.io/male_main/";
+    } else if (gender === "female") {
+      window.location.href = "https://divesh012.github.io/female_main/";
+    } else if (gender === "other") {
+      window.location.href = "other.html";
+    }
+  });
+</script>
+</body>
+</html>
+
+  <!-- Section 2: Better Food Section -->
+  <section class="better-food-section">
+    <img src="salon fashion.jpg" alt="Better food background" class="background-image">
+    <div class="content">
+      <h2>Better Service for<br>more people</h2>
+      <p>
+        For over a decade, we’ve enabled our<br>
+        customers to discover new type Service,<br>
+        delivered right to their doorstep.
+      </p>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <strong>3,00,000+</strong>
+        <span>Salon's</span>
+      </div>
+      <div class="stat">
+        <strong>800+</strong>
+        <span>cities</span>
+      </div>
+      <div class="stat">
+        <strong>3 billion+</strong>
+        <span>People Experience</span>
+      </div>
+    </div>
+  </section>
+  
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h2 class="footer-logo">Gloora</h2>
+    </div>
+
+    <div class="footer-column">
+      <h3>beauty_concept</h3>
+      <ul>
+        <li><a href="#">Gloora</a></li>
+        <li><a href="#">-</a></li>
+        <li><a href="#">-</a></li>
+        <li><a href="#">-</a></li>
+        <li><a href="#">-India</a></li>
+        <li><a href="#">Investor Relations</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>For Salon's</h3>
+      <ul>
+        <li><a href="#">Partner With Us</a></li>
+        <li><a href="#">Apps For You</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>For Service Partners</h3>
+      <ul>
+        <li><a href="#">Partner With Us</a></li>
+        <li><a href="#">Apps For You</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Learn More</h3>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Help & Support</a></li>
+        <li><a href="#">Report a Fraud</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Social Links</h3>
+      <div class="social-icons">
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="YouTube"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"></a>
+        <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="X"></a>
+      </div>
+      <div class="store-buttons">
+       <a href=""> <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store"></a>
+        <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies.
+    All trademarks are properties of their respective owners.<br>
+    2008–2025 © Gloora™ Ltd. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>
